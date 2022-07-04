@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treaties</title>
+    <script defer src="js/focus-visible.min.js"></script>
+    <script defer src="js/choices.min.js"></script>
+    <script defer src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script defer src="js/index.js"></script>
+    <link rel="stylesheet" href="css/choices.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <main class="main">
+        <section class="treaties">
+            <div class="container">
+                <h1 class="treaties__header">Договоры</h1>
+                <ul class="treaties__search search accordion">
+                    <li class="search__item">
+                        <h2 class="search__header">Поиск</h2>
+                        <div class="search__open">
+                            <form action="#" class="search__form form">
+                                <div class="form__search form-search">
+                                    <div class="form-search__input">
+                                        <input name="search" type="text" class="form-search__input-text input" placeholder="Введите текст для поиска">
+                                        <label class="label">
+                                            <input type="checkbox" class="form-search__checkbox checkbox">
+                                            <span class="custom-checkbox"></span>
+                                            <span class="form-search__input-span input-span">точное совпадение</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-search__search-in">
+                                        <h3 class="form-search__header input-header">Искать в</h3>
+                                        <ul class="form-search__list">
+                                            <li class="form-search__item">
+                                                <label class="label">
+                                                    <input type="checkbox" class="checkbox">
+                                                    <span class="custom-checkbox"></span>
+                                                    <span class="input-span">номере</span>
+                                                </label>
+                                            </li>
+                                            <li class="form-search__item">
+                                                <label class="label">
+                                                    <input type="checkbox" class="checkbox">
+                                                    <span class="custom-checkbox"></span>
+                                                    <span class="input-span">логине</span>
+                                                </label>
+                                            </li>
+                                            <li class="form-search__item">
+                                                <label class="label">
+                                                    <input type="checkbox" class="checkbox">
+                                                    <span class="custom-checkbox"></span>
+                                                    <span class="input-span">ФИО</span>
+                                                </label>
+                                            </li>
+                                            <li class="form-search__item">
+                                                <label class="label">
+                                                    <input type="checkbox" class="checkbox">
+                                                    <span class="custom-checkbox"></span>
+                                                    <span class="input-span">названии организации</span>
+                                                </label>
+                                            </li>
+                                            <li class="form-search__item">
+                                                <label class="label">
+                                                    <input type="checkbox" class="checkbox">
+                                                    <span class="custom-checkbox"></span>
+                                                    <span class="input-span">адресе</span>
+                                                </label>
+                                            </li>
+                                            <li class="form-search__item">
+                                                <label class="label">
+                                                    <input type="checkbox" class="checkbox">
+                                                    <span class="custom-checkbox"></span>
+                                                    <span class="input-span">ИНН</span>
+                                                </label>
+                                            </li>
+                                            <li class="form-search__item">
+                                                <label class="label">
+                                                    <input type="checkbox" class="checkbox">
+                                                    <span class="custom-checkbox"></span>
+                                                    <span class="input-span">КПП</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <ul class="form__detail detail">
+                                    <li class="detail__item">
+                                        <h3 class="detail__header input-header">Статус</h3>
+                                        <ul class="detail__list">
+                                            <li class="detail__item">
+                                                <select name="" id="selectCustom" class="select-custom">
+                                                    <option value="">--Укажите статус--</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                </select>
+                                            </li>
+                                            <li class="detail__item">
+                                                <select name="" id="" class="select-custom">
+                                                    <option value="">--Тип договора--</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                </select>
+                                            </li>
+                                            <li class="detail__item">
+                                                <select name="" id="" class="select-custom">
+                                                    <option value="">--Работа с ЭДО--</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                </select>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="detail__item">
+                                        <h3 class="detail__header input-header">Фильтрация</h3>
+                                        <select name="" id="" class="select-custom">
+                                            <option value="">--Не важно--</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                        </select>
+                                    </li>
+                                    <li class="detail__item">
+                                        <h3 class="detail__header input-header">Группа</h3>
+                                        <select name="" id="" class="select-custom">
+                                            <option value="">--Все--</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                        </select>
+                                    </li>
+                                    <li class="detail__item">
+                                        <h3 class="detail__header input-header">Скан договора</h3>
+                                        <select name="" id="" class="select-custom">
+                                            <option value="">--Не важно--</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                        </select>
+                                    </li>
+                                    <li class="detail__item">
+                                        <h3 class="detail__header input-header">Страна</h3>
+                                        <select name="" id="" class="select-custom">
+                                            <option value="">--Выбрать--</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                        </select>
+                                    </li>
+                                </ul>
+                                <div class="form__btns">
+                                    <button class="form__clear-btn" type="button">Очистить форму</button>
+                                    <button class="form__search-form" type="submit">Искать договоры</button>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

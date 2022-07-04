@@ -1,0 +1,48 @@
+.choices {
+  min-width: 230px;
+}
+
+.choices__inner {
+  @include hoverInput;
+
+  background-color: $selectBg;
+  border: none;
+  font-size: 16px;
+  border-radius: 30px;
+}
+
+.is-open .choices__inner {
+  border-radius: 30px;
+}
+
+.choices .choices__list--dropdown {
+  top: 40px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  z-index: 10;
+  border-radius: 10px;
+  width: 100%;
+  background-color: $background;
+  border: none;
+
+}
+
+.choices .choices__inner {
+  position: relative;
+  z-index: 2;
+  border-radius: 10px;
+}
+
+.choices .choices__inner {
+  border-radius: 30px;
+}
+
+.choices[data-type*=select-one]::after {
+  z-index: 2;
+  right: 14px;
+  border-color: $selectText transparent transparent;
+}
+
+.choices[data-type*=select-one].is-open::after {
+  border-color: transparent transparent $selectText;
+}

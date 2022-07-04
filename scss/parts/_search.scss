@@ -1,0 +1,93 @@
+.ui-accordion .ui-accordion-header {
+    font-size: 40px;
+    color: $headers;
+}
+
+.ui-icon-triangle-1-s {
+    background-position: 0 0;
+}
+
+.ui-icon {
+    width: 20px;
+    position: absolute;
+    top: 60%;
+    right: 25px;
+}
+
+.ui-widget-content {
+    border: none;
+}
+
+.ui-widget {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.04);
+}
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus,
+.ui-button:hover,
+.ui-button:focus {
+    background-color: #fff;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+    border-radius: 20px;
+}
+
+.ui-accordion .ui-accordion-content {
+    border-radius: 0 0 20px 20px;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+    background-color: #fff;
+    border: none;
+}
+
+.ui-state-active {
+    background: #fff;
+    border: none;
+    border-bottom: 1px solid $border;
+    border-radius: 20px 20px 0 0;
+}
+
+.ui-state-hover .ui-icon,
+.ui-state-focus .ui-icon,
+.ui-button:hover .ui-icon,
+.ui-button:focus .ui-icon {
+    background-image: url('../img/arrow.svg');
+}
+
+.ui-icon,
+.ui-widget-content .ui-icon {
+    background-image: url('../img/arrow.svg');
+}
+
+.ui-state-active .ui-icon,
+.ui-button:active .ui-icon {
+    background-image: url('../img/arrow2.svg');
+}
+
+.ui-icon-triangle-1-e {
+    background-position: 0 0;
+}
+
+.ui-accordion .ui-accordion-content {
+    padding: 25px 40px 45px 40px;
+
+    @media(max-width: 400px) {
+        padding: 25px 20px 35px 20px;
+    }
+}

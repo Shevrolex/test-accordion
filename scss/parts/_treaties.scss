@@ -1,0 +1,165 @@
+.treaties {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: $background;
+
+    &__header {
+        font-size: 40px;
+        color: $headers;
+        margin-bottom: 22px;
+    }
+}
+
+.input {
+    @include hoverInput;
+
+    min-width: 617px;
+    padding: 15px 17px;
+    background-color: $selectBg;
+    border-radius: 30px;
+
+    &::placeholder {
+        font-size: 16px;
+        color: $selectText;
+    }
+
+    @media(max-width: 910px) {
+        min-width: 200px;
+    }
+}
+
+.input-span {
+    font-size: 16px;
+    color: $checkboxText;
+}
+
+.input-header {
+    font-size: 16px;
+    font-weight: 600;
+    color: $selectHeaders;
+}
+
+.form-search {
+    &__input {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+
+        @media(max-width: 910px) {
+            flex-direction: column;
+        }
+    }
+
+    &__input-text {
+        @media(max-width: 910px) {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+    }
+
+    &__search-in {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid $border;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+
+        @media(max-width: 910px) {
+            flex-wrap: wrap;
+        }
+
+        @media(max-width: 470px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    &__header {
+        margin-right: 38px;
+
+        @media(max-width: 910px) {
+            min-width: 100px;
+        }
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+    }
+}
+
+.detail {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__list {
+        display: flex;
+
+        @media(max-width: 910px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__header {
+        margin-bottom: 15px;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 15px;
+            margin-right: 10px;
+        }
+    }
+}
+
+.form {
+    &__clear-btn {
+        @include hoverBtnClear;
+
+        color: $btnClear;
+        background-image: url(../img/broom.svg);
+        background-repeat: no-repeat;
+        background-size: 20px 20px;
+        background-position: 0px -1px;
+        padding-left: 20px;
+        margin-right: 15px;
+
+        @media(max-width: 540px) {
+            margin-right: 0;
+            margin-bottom: 15px;
+        }
+    }
+
+    &__search-form {
+        @include hoverBtnSearch;
+
+        padding: 10px 50px;
+        background-color: $btnBg;
+        border: 1px solid transparent;
+        border-radius: 30px;
+    }
+
+    &__btns {
+        text-align: end;
+
+        @media(max-width: 540px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__detail {
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid $border;
+    }
+
+}

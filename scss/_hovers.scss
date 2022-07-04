@@ -1,0 +1,58 @@
+@mixin hoverInput {
+  transition: all 0.3s ease-in-out;
+
+  &.focus-visible {
+    outline: #ADD8E6;
+    background-color: #ADD8E6;
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: #ADD8E6;
+    }
+  }
+
+  &:active {
+    outline: #ADD8E6;
+  }
+}
+
+@mixin hoverBtnSearch {
+  transition: all 0.3s ease-in-out;
+
+  &.focus-visible {
+    outline: #ADD8E6;
+    background-color: #ADD8E6;
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: #fff;
+      border: 1px solid $btnBg;
+    }
+  }
+
+  &:active {
+    background-color: $btnBg;
+    border: 1px solid $btnBg;
+  }
+}
+
+@mixin hoverBtnClear {
+  transition: all 0.3s ease-in-out;
+
+  &.focus-visible {
+    outline: none;
+    color: #ADD8E6;
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      color: #ADD8E6;
+    }
+  }
+
+  &:active {
+    color: #000;
+  }
+}
